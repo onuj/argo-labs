@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: podinfo
-        image: ghcr.io/stefanprodan/podinfo:6.7.1
+        image: ghcr.io/stefanprodan/podinfo:doesnotexist
         ports: [{containerPort: 9898, name: http}]
         readinessProbe:
           httpGet: {path: /readyz, port: 9898}
